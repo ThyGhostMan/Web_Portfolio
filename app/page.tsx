@@ -33,7 +33,7 @@ export default function Home() {
         <section className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-12">
           <div className="h-28 w-28 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-2xl font-bold text-white">FP</div>
           <div>
-            <h1 className="text-3xl font-semibold">Hi — I'm a Future Programmer</h1>
+            <h1 className="text-3xl font-semibold">Hi I'm Daniel — I'm a Future Programmer</h1>
             <p className="mt-2 text-zinc-600 dark:text-zinc-400 max-w-xl">
               I build things to learn and to help others. I enjoy creating small projects, learning new tech, and improving my craft every day. This portfolio highlights some of my practice projects and skills.
             </p>
