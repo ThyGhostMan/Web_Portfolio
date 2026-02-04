@@ -68,7 +68,7 @@ export default function Home() {
                 <span className="text-blue-600 dark:text-blue-400">Programmer & Video Editor.</span>
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-xl">
-                I&apos;m a student of ADDU eager learn and create. Whether it&apos;s developing web applications or crafting compelling video content, I love bringing ideas to life.
+                I&apos;m a student of ADDU eager to learn and create. Whether it&apos;s developing web applications or crafting compelling video content, I love bringing ideas to life.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <a 

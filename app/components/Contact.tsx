@@ -22,7 +22,7 @@ export default function Contact() {
           
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a 
-              href={`mailto:${email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
               className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             >
               <Mail size={16} /> Email
