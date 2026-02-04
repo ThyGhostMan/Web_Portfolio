@@ -2,35 +2,41 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 import FadeIn from "./components/FadeIn";
+import Contact from "./components/Contact";
 import Image from "next/image";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Weather App",
-    description: "A minimal weather app that fetches data from a public API and displays forecasts.",
-    tech: ["React", "OpenWeather API", "Tailwind"],
-    link: "#",
-    github: "#",
+    title: "Calculators Website",
+    description: "A simple website where I created a collection of calculators that calculates Converson, Income tax, Factorial, and simple Payroll",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://deguzmancalculators.vercel.app/",
+    github: "https://github.com/ThyGhostMan/De-Guzman_ITC_WEB",
   },
   {
-    title: "Todo CLI",
-    description: "A command-line todo manager for practicing Node and file I/O.",
-    tech: ["Node.js", "TypeScript"],
-    link: "#",
-    github: "#",
+    title: "NSTP Infomercial",
+    description: "A video infomercial I edited for the NSTP program at ADDU.",
+    tech: ["Capcut"],
+    link: "https://drive.google.com/file/d/1-j0ch5aylA08VWbtr3SmggPLkPqNNNQO/view?usp=sharing",
   },
   {
-    title: "Portfolio Site",
-    description: "This site — built to showcase projects and provide contact details.",
-    tech: ["Next.js", "Tailwind CSS"],
-    link: "#",
-    github: "#",
+    title: "Quiz Game",
+    description: "A simple and fun quiz game heavily inspired to the website Quizizz.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://deguzman-quizgame.vercel.app/",
+    github: "https://github.com/ThyGhostMan/De-Guzman_Quiz-Game",
+  },
+  {
+    title: "The Two lives of Christmas",
+    description: "A short film project I edited for our 21st century literature subject.",
+    tech: ["Capcut"],
+    link: "https://drive.google.com/file/d/1PAyzcFNI-N3L8_KpwS_OgS0i6ClRib6y/view?usp=sharing",
   },
 ];
 
 const skills = [
-  "React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Git", "PostgreSQL", "Figma"
+  "HTML", "CSS", "JavaScript", "Git", "Python", "Capcut"
 ];
 
 export default function Home() {
@@ -46,12 +52,12 @@ export default function Home() {
         {/* Hero */}
         <FadeIn>
           <section className="flex flex-col gap-8 sm:flex-row sm:items-center sm:gap-12">
-            <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-full border-4 border-white shadow-lg dark:border-zinc-800">
+            <div className="relative h-36 w-36 shrink-0 self-center sm:self-auto overflow-hidden rounded-full border-4 border-white shadow-lg dark:border-zinc-800">
               <Image 
                 src="/profile.jpg" 
                 alt="Profile photo" 
-                width={128} 
-                height={128} 
+                width={144} 
+                height={144} 
                 className="object-cover"
                 priority
               />
@@ -59,10 +65,10 @@ export default function Home() {
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 Hi, I&apos;m Daniel. <br className="hidden sm:block" />
-                <span className="text-blue-600 dark:text-blue-400">Future Programmer.</span>
+                <span className="text-blue-600 dark:text-blue-400">Programmer & Video Editor.</span>
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 max-w-xl">
-                I build things to learn and to help others. I enjoy creating small projects, learning new tech, and improving my craft every day.
+                I&apos;m a student of ADDU eager learn and create. Whether it&apos;s developing web applications or crafting compelling video content, I love bringing ideas to life.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <a 
@@ -88,10 +94,10 @@ export default function Home() {
             <h2 className="text-2xl font-bold tracking-tight">About</h2>
             <div className="mt-6 grid gap-6 text-zinc-600 dark:text-zinc-400 sm:grid-cols-2">
               <p>
-                I&apos;m currently learning web development and practicing full-stack concepts. My journey started with simple HTML/CSS pages, and now I&apos;m building interactive applications with React and Next.js.
+                I&apos;m a passionate developer with video editing experience. I am currently a CS student learning more and more about programming and also offering my editing skills on projects.
               </p>
               <p>
-                I focus on building accessible, maintainable apps with a special interest in developer experience and clean UI. When I&apos;m not coding, I&apos;m likely reading about new tech or contributing to open source.
+                I specialize in creating web applications and editing video content. I&apos;m constantly learning new technologies and techniques to improve my craft in both fields.
               </p>
             </div>
           </section>
@@ -131,25 +137,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <FadeIn delay={0.2}>
-          <section id="contact" className="mt-24 mb-12 scroll-mt-24 rounded-2xl bg-zinc-100 p-8 dark:bg-zinc-900">
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
-                <Mail size={24} />
-              </div>
-              <h2 className="mt-4 text-2xl font-bold">Get in touch</h2>
-              <p className="mt-2 max-w-md text-zinc-600 dark:text-zinc-400">
-                Want to collaborate, ask a question, or just say hi? I&apos;d love to hear from you.
-              </p>
-              <a 
-                href="mailto:hello@example.com" 
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-blue-600 px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-              >
-                Say Hello
-              </a>
-            </div>
-          </section>
-        </FadeIn>
+        <Contact />
       </main>
 
       <Footer />
