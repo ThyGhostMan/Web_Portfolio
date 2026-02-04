@@ -10,7 +10,7 @@ export default function Footer() {
             <Github size={18} />
             <span className="sr-only">GitHub</span>
           </a>
-          <a href="mailto:daadeguzman@addu.edu.ph" title="daadeguzman@addu.edu.ph" className="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daadeguzman@addu.edu.ph" title="daadeguzman@addu.edu.ph" className="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             <Mail size={18} />
             <span className="sr-only">Email</span>
           </a>
